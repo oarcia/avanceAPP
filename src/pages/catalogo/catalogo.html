@@ -1,0 +1,27 @@
+<ion-header>
+
+    <ion-navbar>
+      <img src="assets/imgs/logo.jpeg"/>
+      <ion-title>{{data.name}}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  <ion-content padding>
+  <ion-card>
+    <img [src]="data.image"/>
+    <ion-card-content>
+      <ion-item text-wrap>
+      <p>{{data.about}}</p>
+      </ion-item>
+    </ion-card-content>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+        <button ion-button icon-left clar small>
+          <ion-icon name="md-map"></ion-icon>
+          <div>{{data.identidad}}</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  </ion-content>

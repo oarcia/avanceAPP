@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar>
+      <img src="assets/imgs/logo.jpeg"/>
+    <ion-title>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card (tap)="seleccion(1)">
+  <div padding-top text-uppercase class="card-title"><b>Mejores Opciones en Sonido</b></div>
+  <div text-capitalize class="card-subtitle"><b>calidad y precio a su alcance</b></div>
+  <img src="assets/imgs/bocina.jpeg"/>
+  </ion-card>
+
+  <ion-card (tap)="seleccion(2)">
+    <img src="assets/imgs/consola.jpg"/>
+    <div padding-top text-uppercase  class="card-title"><b>Accesorios para tu Computadora</b></div>
+    <div text-capitalize  class="card-subtitle"><b>los mejores accesorios para su PC , MAC</b></div>
+  </ion-card>
+
+  <ion-card (tap)="seleccion(3)">
+    <img src="assets/imgs/audifonos.jpg"/>
+    <div padding-top text-uppercase  class="card-title"><b>Los Audifonos con alta calidad en Sonido</b></div>
+    <div text-capitalize  class="card-subtitle"><b>Diadema,inalambricos,bluethoo</b></div>
+  </ion-card>
+  
+  <ion-card (tap)="seleccion(4)">
+    <img src="assets/imgs/ctg.jpeg"/>
+    <div padding-top text-uppercase class="card-title"><b>Mas Accesorios</b></div>
+    <div text-capitalize  class="card-subtitle"><b>En nuestra tienda online encontrara muchas mas Cosas</b></div>
+  </ion-card>
+
+  <ion-item>Buscar Articulo</ion-item>
+  <ion-searchbar
+  [(ngModel)]="myInput"
+  [showCancelButton]="shouldShowCancel"
+  (ionInput)="onInput($event)"
+  (ionCancel)="onCancel($event)">
+</ion-searchbar>
+
+</ion-content>
+ 

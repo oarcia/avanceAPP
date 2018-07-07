@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img src="assets/imgs/logo.jpeg" /> Contactanos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <b><ion-label>Pedidos</ion-label></b>
+  <ion-label></ion-label>
+  <ion-item>
+    <ion-label>Nombre</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Correo Electronico</ion-label>
+    <ion-input type="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Telefono</ion-label>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Deja tu comentario</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-list radio-group [(ngModel)]="relationship">
+      <ion-item>
+        <ion-label>Cliente</ion-label>
+        <ion-radio value="friends" checked></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Distribuidor</ion-label>
+        <ion-radio value="enemies" [disabled]="isDisabled"></ion-radio>
+      </ion-item>
+    </ion-list>
+</ion-content>
